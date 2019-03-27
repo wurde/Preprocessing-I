@@ -92,6 +92,13 @@ h3 {
   padding-bottom: 5px;
 }
 
+a {
+  color: #007fff;
+}
+a:hover {
+  color: #42a0ff;
+}
+
 /* Re-usable class-based CSS styles for colors */
 
 .bg-white {
@@ -111,6 +118,10 @@ h3 {
 }
 .bg-abbey {
   background: @abbey;
+}
+
+.text-white {
+  color: #FFF;
 }
 
 /* Re-usable class-based CSS styles for the grid */
@@ -187,6 +198,22 @@ h3 {
   border: 1px solid black;
 }
 
+/* Animation styles */
+
+.anim-blink {
+  animation: blink 0.3s infinite;
+}
+@keyframes blink {
+  25%,
+  75% {
+    color: transparent;
+  }
+  40%,
+  60% {
+    color: #FFF;
+  }
+}
+
 /* Mixin styles */
 
 .card {
@@ -194,6 +221,10 @@ h3 {
   .border;
   .p-2;
   .m-2;
+}
+
+.surprise {
+  .anim-blink;
 }
 
 /* Mobile styles */

@@ -149,6 +149,12 @@ h3 {
   font-size: 1.2rem;
   padding-bottom: 5px;
 }
+a {
+  color: #007fff;
+}
+a:hover {
+  color: #42a0ff;
+}
 /* Re-usable class-based CSS styles for colors */
 .bg-white {
   background: #FFF;
@@ -167,6 +173,9 @@ h3 {
 }
 .bg-abbey {
   background: #4C5157;
+}
+.text-white {
+  color: #FFF;
 }
 /* Re-usable class-based CSS styles for the grid */
 .container {
@@ -233,12 +242,29 @@ h3 {
 .border {
   border: 1px solid black;
 }
+/* Animation styles */
+.anim-blink {
+  animation: blink 0.3s infinite;
+}
+@keyframes blink {
+  25%,
+  75% {
+    color: transparent;
+  }
+  40%,
+  60% {
+    color: #FFF;
+  }
+}
 /* Mixin styles */
 .card {
   background: #FFF;
   border: 1px solid black;
   padding: 15px;
   margin: 15px;
+}
+.surprise {
+  animation: blink 0.3s infinite;
 }
 /* Mobile styles */
 @media (max-width: 800px) {
