@@ -283,8 +283,13 @@ strong {
 .surprise {
   animation: blink 0.3s infinite;
 }
-/* Mobile styles */
 @media (max-width: 800px) {
+  .surprise {
+    animation: none;
+  }
+}
+/* Mobile styles */
+@media (max-width: 500px) {
   .container {
     width: 95%;
   }

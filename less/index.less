@@ -245,15 +245,16 @@ strong {
 
 .surprise {
   .anim-blink;
+
+  @media(max-width: 800px) {
+    animation: none;
+  }
 }
 
 /* Mobile styles */
 
-@media(max-width: 800px) {
+@media(max-width: 500px) {
   .container {
     width: 95%;
   }
-}
-
-@media(max-width: 500px) {
 }
