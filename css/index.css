@@ -134,13 +134,44 @@ html,
 body {
   height: 100%;
 }
-/* Re-usable class-based CSS styles */
+/* Variables */
+/* Element CSS styles */
+h1 {
+  font-size: 1.8rem;
+}
+h2 {
+  font-size: 1.4rem;
+}
+h3 {
+  font-size: 1.2rem;
+}
+/* Re-usable class-based CSS styles for colors */
+.bg-dusty-white {
+  background: #F6F8F8;
+}
+.bg-silver-sand {
+  background: #B8BCC1;
+}
+.bg-regent-gray {
+  background: #8B939C;
+}
+.bg-pale-sky {
+  background: #6B727B;
+}
+.bg-abbey {
+  background: #4C5157;
+}
+/* Re-usable class-based CSS styles for the grid */
 .container {
   max-width: 1024px;
   margin: 0 auto;
 }
 .row {
   display: flex;
+}
+.col-12,
+.col-6 {
+  padding: 0px 20px;
 }
 .col-12 {
   width: 100%;

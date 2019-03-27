@@ -57,7 +57,56 @@ html, body {
   height: 100%;
 }
 
-/* Re-usable class-based CSS styles */
+/* Variables */
+
+// Grid
+@col-padding: 0px 20px;
+
+// Typography
+@h1-font-size: 1.8rem;
+@h2-font-size: 1.4rem;
+@h3-font-size: 1.2rem;
+
+// Colors
+@dusty-white: #F6F8F8;
+@silver-sand: #B8BCC1;
+@regent-gray: #8B939C;
+@pale-sky: #6B727B;
+@abbey: #4C5157;
+
+/* Element CSS styles */
+
+h1 {
+  font-size: @h1-font-size;
+}
+
+h2 {
+  font-size: @h2-font-size;
+}
+
+h3 {
+  font-size: @h3-font-size;
+}
+
+/* Re-usable class-based CSS styles for colors */
+
+.bg-dusty-white {
+  background: @dusty-white;
+}
+.bg-silver-sand {
+  background: @silver-sand;
+}
+.bg-regent-gray {
+  background: @regent-gray;
+}
+.bg-pale-sky {
+  background: @pale-sky;
+}
+.bg-abbey {
+  background: @abbey;
+}
+
+/* Re-usable class-based CSS styles for the grid */
 
 .container {
   max-width: 1024px;
@@ -66,6 +115,10 @@ html, body {
 
 .row {
   display: flex;
+}
+
+.col-12, .col-6 {
+  padding: @col-padding;
 }
 
 .col-12 {
