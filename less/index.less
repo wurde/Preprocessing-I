@@ -78,18 +78,24 @@ html, body {
 
 h1 {
   font-size: @h1-font-size;
+  padding-bottom: 15px;
 }
 
 h2 {
   font-size: @h2-font-size;
+  padding-bottom: 10px;
 }
 
 h3 {
   font-size: @h3-font-size;
+  padding-bottom: 5px;
 }
 
 /* Re-usable class-based CSS styles for colors */
 
+.bg-white {
+  background: #FFF;
+}
 .bg-dusty-white {
   background: @dusty-white;
 }
@@ -127,6 +133,57 @@ h3 {
 
 .col-6 {
   width: 50%;
+}
+
+.rounded-top {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.rounded-bottom {
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.p-2 {
+  padding: 15px;
+}
+.p-4 {
+  padding: 30px;
+}
+.py-2 {
+  padding: 15px 0px;
+}
+.py-4 {
+  padding: 30px 0px;
+}
+.px-2 {
+  padding: 0px 15px;
+}
+.px-4 {
+  padding: 0px 30px;
+}
+
+.m-2 {
+  margin: 15px;
+}
+.m-4 {
+  margin: 30px;
+}
+.my-2 {
+  margin: 15px 0px;
+}
+.my-4 {
+  margin: 30px 0px;
+}
+.mx-2 {
+  margin: 0px 15px;
+}
+.mx-4 {
+  margin: 0px 30px;
+}
+
+.border {
+  border: 1px solid black;
 }
 
 @media(max-width: 800px) {
