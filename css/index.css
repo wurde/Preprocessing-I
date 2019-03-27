@@ -193,6 +193,7 @@ strong {
 }
 .row {
   display: flex;
+  flex-flow: row wrap;
 }
 .col-12,
 .col-6 {
@@ -292,5 +293,8 @@ strong {
 @media (max-width: 500px) {
   .container {
     width: 95%;
+  }
+  .col-6 {
+    width: 100%;
   }
 }
