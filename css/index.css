@@ -1,1 +1,300 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+/* Variables */
+/* Element CSS styles */
+h1 {
+  font-size: 1.8rem;
+  padding-bottom: 15px;
+  font-family: 'Germania One', cursive;
+}
+h2 {
+  font-size: 1.4rem;
+  padding-bottom: 10px;
+}
+h3 {
+  font-size: 1.2rem;
+  padding-bottom: 5px;
+}
+a {
+  color: #007fff;
+}
+a:hover {
+  color: #42a0ff;
+}
+strong {
+  font-weight: bold;
+}
+/* Re-usable class-based CSS styles for colors */
+.bg-white {
+  background: #FFF;
+}
+.bg-dusty-white {
+  background: #F6F8F8;
+}
+.bg-silver-sand {
+  background: #B8BCC1;
+}
+.bg-regent-gray {
+  background: #8B939C;
+}
+.bg-pale-sky {
+  background: #6B727B;
+}
+.bg-abbey {
+  background: #4C5157;
+}
+.text-white {
+  color: #FFF;
+}
+/* Re-usable class-based CSS styles for the grid */
+.d-flex {
+  display: flex;
+}
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.justify-content-space-around {
+  justify-content: space-around;
+}
+.row {
+  display: flex;
+  flex-flow: row wrap;
+}
+.col-12,
+.col-6 {
+  padding: 0px 20px;
+}
+.col-12 {
+  width: 100%;
+}
+.col-6 {
+  width: 50%;
+}
+.rounded-top {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.rounded-bottom {
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.p-2 {
+  padding: 15px;
+}
+.p-4 {
+  padding: 30px;
+}
+.py-2 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.py-4 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.px-2 {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.px-4 {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.m-2 {
+  margin: 15px;
+}
+.m-4 {
+  margin: 30px;
+}
+.my-2 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.my-4 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.mx-2 {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.mx-4 {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+.border {
+  border: 1px solid black;
+}
+/* Animation styles */
+.anim-blink {
+  animation: blink 0.3s infinite;
+}
+@keyframes blink {
+  25%,
+  75% {
+    color: transparent;
+  }
+  40%,
+  60% {
+    color: #FFF;
+  }
+}
+/* Mixin styles */
+.card {
+  background: #FFF;
+  border: 1px solid black;
+  padding: 15px;
+  margin: 15px;
+}
+.surprise {
+  animation: blink 0.3s infinite;
+}
+@media (max-width: 800px) {
+  .surprise {
+    animation: none;
+  }
+}
+/* Mobile styles */
+@media (max-width: 500px) {
+  .container {
+    width: 95%;
+  }
+  .col-6 {
+    width: 100%;
+  }
+}
